@@ -10,12 +10,12 @@
 - [api](#api-usage)
 
 
-## CONFIGURATION SETTINGS
+### CONFIGURATION SETTINGS
 
 first thing first **(i'll want to clone the github repo first)**, check the yaml configurations file located at ``` src/conf/configs.yml ``` the configs file provides all the settings needed for training, testing and inferencing the t5 model, at the configs file, you can change the settings for your suitable need, e.g batch size, training epochs, paths to datas, model name, etc.
 
 
-## TRAINING
+### TRAINING
 let's see how the config file looks like, 
 
 ```yaml
@@ -63,7 +63,7 @@ python finetune.py
 ```
 this command will start finetuning your t5 model on your own dataset, and saving the best model at the ```path_to_save``` directory each time the model achieves best result or higher bleu score than previous one.
 
-## TESTING
+### TESTING
 after you finished training your model, you can test the model by setting the ```dev_path``` to your evaluation dataset, just type the command below at the terminal:
 
 ```cmd
@@ -73,10 +73,10 @@ python evaluate.py
 
 if you want to see all the logging historys, go to the ```logs.log``` file
 
-## INFERENCE
+### INFERENCE
 loading...
 
 
-## API USAGE
+### API USAGE
 loading...
 ...
