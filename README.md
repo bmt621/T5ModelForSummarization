@@ -74,7 +74,7 @@ python evaluate.py
 if you want to see all the logging historys, go to the ```logs.log``` file
 
 ### INFERENCE
-also, if you want to perform real inference. go to the ```infer.py``` path and type the following command at terminal:
+also, if you want to perform realtime inference. go to the ```infer.py``` path and type the following command at terminal:
 
 ```cmd
 python infer.py
