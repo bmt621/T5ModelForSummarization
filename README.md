@@ -7,7 +7,7 @@
 - [Training](#training)
 - [Testing](#testing)
 - [real time inference](#inference)
-- [api](#api)
+- [api](#api-usage)
 
 
 ## CONFIGURATION SETTINGS
