@@ -32,7 +32,7 @@ class t5Trainer:
             self.tokenizer = T5Tokenizer.from_pretrained(self.model_configs['model_name'])
 
 
-        self.device = torch.device('cuda' if self.train_configs['use_cuda'] and torch.cuda.is_availabel() else 'cpu')
+        self.device = torch.device('cuda' if self.train_configs['use_cuda'] and torch.cuda.is_available() else 'cpu')
 
     
     def _load_model(self):
@@ -178,7 +178,7 @@ class t5Trainer:
                 hyps+=decoded
                 true_pred+=tgt
 
-                bleu_score = self._calculate_bleu_score(hyps,true_pred)
+         bleu_score = self._calculate_bleu_score(hyps,true_pred)
                 
 
         return bleu_score
